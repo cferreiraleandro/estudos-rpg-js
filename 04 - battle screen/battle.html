@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battle</title>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"> -->
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+        <button type="submit" onclick="battle.startGame()">Start</button>
+        <div class="hero-infos">
+            <span><p class="nome" id="nome">Hero</p></span>
+            <span><p class="vitalidade" id="vitalidade">Vitalidade:</p> </span>
+            <span><p class="forca" id="forca">Força:</p> </span>
+            <span><p class="agilidade" id="agilidade">Agilidade:</p> </span>
+            <span><p class="inteligencia" id="inteligencia">Inteligência:</p> </span>
+            <span><p class="defesa" id="defesa">Defesa:</p> </span>
+            <!-- <img src="./imgs/battle01.png" class="hero-img" id="hero-img"> -->
+        </div>
+        <div class="monster-infos">
+            <span><p class="nome-monster" id="nome-monster">Monster</p></span>
+            <span><p class="vit-monster" id="vit-monster">Vitalidade:</p> </span>
+            <span><p class="for-monster" id="for-monster">Força:</p> </span>
+            <span><p class="agi-monster" id="agi-monster">Agilidade:</p> </span>
+            <span><p class="def-monster" id="def-monster">Defesa:</p> </span>
+            <!-- <img src="./imgs/poring slime.png" class="monster-img" id="monster-img"> -->
+        </div>
+    <div class="buttons-part">
+        <button type="submit" onclick="battle.atacar()">Atacar</button>
+        <!-- <button type="submit">Correr</button> -->
+        <div class="log-box" id="log-box" style="border: 1px solid black">
+            <span class="log-batalha" id="log-batalha">LOG DE BATALHA</span>
+        </div>
+    </div>
+</body>
+</html>

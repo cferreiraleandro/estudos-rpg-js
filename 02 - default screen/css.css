@@ -1,0 +1,42 @@
+body {
+    background-image: url("./imgs/fundo\ 2\ tela.png");
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background-size: contain;
+}
+
+.card {
+    background-color: transparent;
+    border: none;
+}
+
+.buttom-new-char img, .buttom-battle img {
+    width: 28%;
+}
+
+.buttom-new-char {
+    margin-left: 40%;
+}
+
+.columns {
+    display: flex;
+}
+
+.column {
+    width: 50%;
+    margin-top: 8%;
+    margin-bottom: 0;
+    padding-left: 5%;
+}
+
+.bartender {
+    /* display: relative; */
+    margin-top: -20%;
+    margin-left: 120%;
+    width: 82%;
+}
+
+/* .teste1 {
+    width: 30%;
+    float: top;
+} */

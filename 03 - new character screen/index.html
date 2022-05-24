@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>new character</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="./script.js" defer></script>
+
+</head>
+
+<body>
+  <div class="columns">
+    <div class="column">
+      <div class="card">
+        <div class="character-content">
+          <h3>Novo personagem</h3>
+          <div class="inputs">
+            <form action="/pagina-processa-dados-do-form" onsubmit="event.preventDefault()" method="post" id="formulario">
+              <div class="name">
+                <label for="name">Nome:</label>
+                <input type="text" class="custom-input" id="nickname" name="nickname" autocomplete="off" placeholder="Username" />
+              </div>
+              <div class="age">
+                <label for="age">Idade:</label>
+                <input type="number" class="custom-input" id="idade" name="idade" placeholder="Age" min="1" />
+              </div>
+              <div class="classe">
+                <span> Classe:</span>
+                <select class="custom-select" name="profissao" id="profissao">
+                  <option value="guerreiro">Guerreiro</option>
+                  <option value="arqueiro">Arqueiro</option>
+                  <option value="mago">Mago</option>
+                  <option value="curandeiro">Curandeiro</option>
+                  <option value="tank">Tank</option>
+                </select>
+              </div>
+              <div class="race">
+                <span> Raça:</span>
+                <select class="custom-select" name="raca" id="raca">
+                  <option value="Humano">Humano</option>
+                  <option value="Elfo">Elfo</option>
+                  <option value="Anão">Anão</option>
+                </select>
+              </div>
+            </form>
+          </div>
+          <div class="confirm-button">
+            <button type="submit" onclick="newGame.newChar()" class="butao"><b>confirmar</b></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="imagem">
+        <img src="./imgs/Clipart-Clash-Of-Clans-PNG.png" alt="meninao" class="giant">
+      </div>
+    </div>
+  </div>
+  
+
+</body>
+
+</html>
